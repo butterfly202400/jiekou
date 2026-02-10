@@ -1,10 +1,12 @@
 name: 自动更新中转JSON
 
 on:
+  push:
+    paths:
+      - 'build_json.py'  # 逻辑1：当 build_json.py 文件发生变动时立即触发
   schedule:
-    # 按照你的要求，每 2 小时运行一次 (UTC时间，0,2,4...等)
-    - cron: '0 */2 * * *'
-  workflow_dispatch: # 支持手动触发测试
+    - cron: '0 */12 * * *' # 逻辑2：每 12 小时运行一次 (UTC时间 0点和12点)
+  workflow_dispatch:      # 保留手动触发按钮，方便随时测试
 
 jobs:
   build:
@@ -26,5 +28,5 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add .
-          git commit -m "Auto Update JSON files (Every 2 hours)" || exit 0
-          git push
+          # 只有当文件有实际变化时才提交，避免无意义的记录
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto Update: Sync changes from build_json.py" && git push)
