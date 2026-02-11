@@ -3,10 +3,10 @@ name: 自动更新中转JSON
 on:
   push:
     paths:
-      - 'build_json.py'  # 逻辑1：当 build_json.py 文件发生变动时立即触发
+      - 'build_json.py'  # 当你手动修改 py 文件并提交时，立即触发更新
   schedule:
-    - cron: '0 */12 * * *' # 逻辑2：每 12 小时运行一次 (UTC时间 0点和12点)
-  workflow_dispatch:      # 保留手动触发按钮，方便随时测试
+    - cron: '0 */3 * * *' # 核心修改：每 3 小时自动运行一次 (UTC时间)
+  workflow_dispatch:      # 保留手动触发按钮，方便你在 GitHub 网页上随时测试
 
 jobs:
   build:
@@ -18,7 +18,7 @@ jobs:
       - name: 设置 Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.x'
+          python-version: '3.10'
 
       - name: 运行生成脚本
         run: python build_json.py
@@ -28,5 +28,5 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add .
-          # 只有当文件有实际变化时才提交，避免无意义的记录
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto Update: Sync changes from build_json.py" && git push)
+          # 只有当文件有实际变化时才提交，配合时间戳逻辑，每次运行都会有变化并提交
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto Update: Sync changes with timestamp" && git push)
