@@ -5,9 +5,9 @@
   "sites": [
     { "key": "推荐", "name": "推荐", "type": 3, "api": "csp_AweSomeGuard", "searchable": 1, "changeable": 1, "ext": { "sp": "Douban" } },
     { "key": "配置", "name": "配置", "type": 3, "api": "csp_AweSomeGuard", "searchable": 0, "changeable": 0, "indexs": 0, "style": { "type": "rect", "ratio": 1.43 }, "ext": { "sp": "Config" } },
-    { "key": "糯米", "name": "糯米", "type": 3, "api": "csp_AweSomeGuard", "searchable": 1, "quickSearch": 1, "changeable": 1, "filterable": 1, "ext": { "sp": "Nmys", "danmu": true }, "timeout": 10 },
-    { "key": "荐片", "name": "荐片", "type": 3, "api": "csp_AweSomeGuard", "searchable": 1, "quickSearch": 1, "changeable": 1, "filterable": 1, "ext": { "sp": "Jianpian", "danmu": true }, "timeout": 10 },
-    { "key": "文采", "name": "文采", "type": 3, "api": "csp_AweSomeGuard", "searchable": 1, "quickSearch": 1, "changeable": 1, "filterable": 1, "ext": { "sp": "Jpys", "danmu": true }, "timeout": 10 },
+    { "key": "糯米", "name": "🍓糯米🍓", "type": 3, "api": "csp_AweSomeGuard", "searchable": 1, "quickSearch": 1, "changeable": 1, "filterable": 1, "ext": { "sp": "Nmys", "danmu": true }, "timeout": 10 },
+    { "key": "荐片", "name": "🍒荐片🍒", "type": 3, "api": "csp_AweSomeGuard", "searchable": 1, "quickSearch": 1, "changeable": 1, "filterable": 1, "ext": { "sp": "Jianpian", "danmu": true }, "timeout": 10 },
+    { "key": "文采", "name": "🍇文采🍇", "type": 3, "api": "csp_AweSomeGuard", "searchable": 1, "quickSearch": 1, "changeable": 1, "filterable": 1, "ext": { "sp": "Jpys", "danmu": true }, "timeout": 10 },
     { "key": "厂长", "name": "厂长", "type": 3, "api": "csp_AweSomeGuard", "searchable": 1, "changeable": 0, "ext": { "sp": "Czzy", "danmu": true } },
     { "key": "立播", "name": "立播", "type": 3, "api": "csp_LibvioGuard", "searchable": 1, "ext": { "Cloud-drive": "tvfan/Cloud-drive.txt", "from": "4k|auto" } },
     { "key": "南瓜", "name": "南瓜", "type": 3, "api": "csp_NanGuaGuard", "searchable": 1, "changeable": 1 },
