@@ -32,7 +32,7 @@
     },
     {
       "key": "糯米",
-      "name": "🍒糯米🍒",
+      "name": "🍒<font color='red'><b>糯米</b></font>🍒",
       "type": 3,
       "api": "csp_AweSomeGuard",
       "searchable": 1,
@@ -47,7 +47,7 @@
     },
     {
       "key": "荐片弹幕版",
-      "name": "🍁荐片🍁",
+      "name": "🍁<font color='red'><b>荐片</b></font>🍁",
       "type": 3,
       "api": "csp_AweSomeGuard",
       "searchable": 1,
@@ -62,7 +62,7 @@
     },
     {
       "key": "文才",
-      "name": "🔥文采🔥",
+      "name": "🔥<font color='red'><b>文采</b></font>🔥",
       "type": 3,
       "api": "csp_AweSomeGuard",
       "searchable": 1,
