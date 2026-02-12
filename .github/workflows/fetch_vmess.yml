@@ -1,43 +1,35 @@
-name: 自动更新 Vmess 链接
+name: Auto Fetch VMESS
 
 on:
   schedule:
-    # 每天北京时间 2:30 和 14:30
-    - cron: '30 18 * * *'  # UTC 2:30 北京时间
-    - cron: '30 6 * * *'   # UTC 14:30 北京时间
-  workflow_dispatch:  # 手动触发
+    # 每天北京时间 02:30、14:30 (UTC+8 → UTC-8 = 18:30、06:30 UTC)
+    - cron: '18 18 * * *'  # 02:30 北京时间
+    - cron: '06 06 * * *'  # 14:30 北京时间
+  workflow_dispatch:
 
 jobs:
-  update_vmess:
+  fetch:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout 仓库
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: 设置 Python
+      - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: "3.x"
 
-      - name: 安装依赖
-        run: |
-          python -m pip install --upgrade pip
-          pip install requests
+      - name: Install requests
+        run: pip install requests
 
-      - name: 运行脚本
-        run: python fetch_vmess.py
-
-      - name: 提交更新（仅在有节点时）
+      - name: Run fetch_vmess.py with retries
         run: |
-          if [ -s vmess_links.txt ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add vmess_links.txt fetch_log.txt
-            git commit -m "自动更新 vmess 链接"
-            git push
-          else
-            echo "vmess_links.txt 为空，跳过提交。"
-          fi
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          python fetch_vmess.py
+
+      - name: Commit & Push updated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add vmess_links.txt fetch_log.txt
+          git commit -m "Update vmess links [ci skip]" || echo "No changes to commit"
+          git push
