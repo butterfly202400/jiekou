@@ -5,8 +5,10 @@ on:
     paths:
       - 'build_json.py'  # 当你手动修改 py 文件并提交时，立即触发更新
   schedule:
-    - cron: '0 */3 * * *' # 核心修改：每 3 小时自动运行一次 (UTC时间)
-  workflow_dispatch:      # 保留手动触发按钮，方便你在 GitHub 网页上随时测试
+    # 核心修改：北京时间 02:30 = UTC时间 18:30 (前一天)
+    # 格式：分 时 日 月 星期
+    - cron: '30 18 * * *'
+  workflow_dispatch:      # 保留手动触发按钮
 
 jobs:
   build:
@@ -28,5 +30,5 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add .
-          # 只有当文件有实际变化时才提交，配合时间戳逻辑，每次运行都会有变化并提交
+          # 只有当文件有实际变化时才提交
           git diff --quiet && git diff --staged --quiet || (git commit -m "Auto Update: Sync changes with timestamp" && git push)
