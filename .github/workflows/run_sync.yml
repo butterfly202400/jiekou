@@ -3,12 +3,11 @@ name: 自动更新中转JSON
 on:
   push:
     paths:
-      - 'build_json.py'  # 当你手动修改 py 文件并提交时，立即触发更新
+      - 'build_json.py'
   schedule:
-    # 核心修改：北京时间 02:30 = UTC时间 18:30 (前一天)
-    # 格式：分 时 日 月 星期
-    - cron: '30 18 * * *'
-  workflow_dispatch:      # 保留手动触发按钮
+    # 核心修改：北京时间 00:00 = UTC时间 16:00
+    - cron: '0 16 * * *'
+  workflow_dispatch:
 
 jobs:
   build:
@@ -30,5 +29,6 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add .
-          # 只有当文件有实际变化时才提交
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto Update: Sync changes with timestamp" && git push)
+          # 注意：去掉时间戳后，如果 sub_configs 里的内容没变，
+          # 运行脚本将不会产生文件变化，git diff 会保持安静，不产生无意义提交。
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto Update: Content change without timestamp" && git push)
