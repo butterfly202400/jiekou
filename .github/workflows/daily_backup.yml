@@ -1,0 +1,40 @@
+name: 每日凌晨定时备份
+
+on:
+  schedule:
+    # 北京时间凌晨 01:00 = UTC 时间 17:00 (前一天)
+    - cron: '0 17 * * *'
+  workflow_dispatch: # 支持手动点击按钮立即执行
+
+jobs:
+  run-backup:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # 必须赋予写入权限，否则无法推送备份到仓库
+
+    steps:
+      - name: 1. 拉取仓库代码
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # 获取完整历史，确保推送顺利
+
+      - name: 2. 安装 Python 环境
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: 3. 执行 Python 备份脚本
+        run: python backup_json.py
+
+      - name: 4. 提交并同步到仓库
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add backup/
+          # 检查是否有文件变化，防止空提交报错
+          if git diff --staged --quiet; then
+            echo "没有检测到任何内容变化，跳过提交。"
+          else
+            git commit -m "Auto Backup: $(date +'%Y-%m-%d %H:%M')"
+            git push
+          fi
