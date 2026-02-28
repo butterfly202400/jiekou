@@ -76,6 +76,21 @@
       "timeout": 10
     },
     {
+      "key": "视界弹幕版",
+      "name": "视界",
+      "type": 3,
+      "api": "csp_AweSomeGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "ext": {
+        "sp": "Nox",
+        "danmu": true
+      },
+      "timeout": 10
+    },
+    {
       "key": "光影弹幕版",
       "name": "光影",
       "type": 3,
