@@ -85,7 +85,7 @@
       "changeable": 1,
       "filterable": 1,
       "ext": {
-        "sp": "Nox",
+        "sp": "AppNox",
         "danmu": true
       },
       "timeout": 10
