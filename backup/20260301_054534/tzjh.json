@@ -1,0 +1,237 @@
+{
+  "spider": "http://oss4liview.moji.com/thd_file/2026/01/26/0e8629c873fea38d04bc58cbeb28c3c5.jpg;md5;127ea82cb8bf8a82f0cf64da66e39b60",
+  "wallpaper": "http://127.0.0.1:9978/proxy?do=wall",
+  "logo": "https://storage.7x24cc.com/storage-server/presigned/ss1/a6-online-fileupload/newMediaImage/ACB34B_773_photo_2022-09-14_00-00-57_20251204145106336newMediaImage.jpg",
+  "sites": [
+    {
+      "key": "推荐",
+      "name": "推荐",
+      "type": 3,
+      "api": "csp_AweSomeGuard",
+      "searchable": 1,
+      "changeable": 1,
+      "ext": {
+        "sp": "Douban"
+      }
+    },
+    {
+      "key": "配置中心",
+      "name": "配置",
+      "type": 3,
+      "api": "csp_AweSomeGuard",
+      "searchable": 0,
+      "changeable": 0,
+      "indexs": 0,
+      "style": {
+        "type": "rect",
+        "ratio": 1.43
+      },
+      "ext": {
+        "sp": "Config"
+      }
+    },
+    {
+      "key": "糯米",
+      "name": "🍒糯米🍒",
+      "type": 3,
+      "api": "csp_AweSomeGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "ext": {
+        "sp": "Nmys",
+        "danmu": true
+      },
+      "timeout": 10
+    },
+    {
+      "key": "荐片弹幕版",
+      "name": "🍁荐片🍁",
+      "type": 3,
+      "api": "csp_AweSomeGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "ext": {
+        "sp": "Jianpian",
+        "danmu": true
+      },
+      "timeout": 10
+    },
+    {
+      "key": "文才",
+      "name": "🔥文采🔥",
+      "type": 3,
+      "api": "csp_AweSomeGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "ext": {
+        "sp": "Jpys",
+        "danmu": true
+      },
+      "timeout": 10
+    },
+    {
+      "key": "视界弹幕版",
+      "name": "🍄视界🍄",
+      "type": 3,
+      "api": "csp_AweSomeGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "ext": {
+        "sp": "Nox",
+        "danmu": true
+      },
+      "timeout": 10
+    },
+    {
+      "key": "光影弹幕版",
+      "name": "光影",
+      "type": 3,
+      "api": "csp_AweSomeGuard",
+      "searchable": 1,
+      "filterable": 1,
+      "changeable": 0,
+      "ext": {
+        "sp": "Guanying",
+        "danmu": true
+      },
+      "timeout": 30
+    },
+    {
+      "key": "厂长弹幕版",
+      "name": "厂长",
+      "type": 3,
+      "api": "csp_AweSomeGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0,
+      "filterable": 1,
+      "ext": {
+        "sp": "Czzy",
+        "danmu": true
+      },
+      "timeout": 10
+    },
+    {
+      "key": "电影天堂",
+      "name": "天堂",
+      "type": 1,
+      "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/from/dyttm3u8/at/m3u8/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "timeout": 10
+    },
+    {
+      "key": "热播弹幕版",
+      "name": "热播",
+      "type": 3,
+      "api": "csp_AweSomeGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "ext": {
+        "sp": "TianTian",
+        "danmu": true,
+        "site": 0
+      },
+      "timeout": 10
+    },
+    {
+      "key": "爱看Bot弹幕版",
+      "name": "爱看",
+      "type": 3,
+      "api": "csp_AweSomeGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "ext": {
+        "sp": "Ikanbot",
+        "danmu": true
+      },
+      "timeout": 10
+    },
+    {
+      "key": "独播弹幕版",
+      "name": "独播",
+      "type": 3,
+      "api": "csp_AweSomeGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0,
+      "filterable": 1,
+      "ext": {
+        "sp": "Duboku",
+        "danmu": true
+      },
+      "timeout": 10
+    },
+    {
+      "key": "小苹果弹幕版",
+      "name": "苹果",
+      "type": 3,
+      "api": "csp_AweSomeGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "ext": {
+        "sp": "Xpg",
+        "danmu": true
+      },
+      "timeout": 10
+    }
+  ],
+  "parses": [
+    {
+      "name": "聚合1",
+      "type": 3,
+      "url": "Demo"
+    },
+    {
+      "name": "推荐",
+      "type": 1,
+      "url": "https://zy.qiaoji8.com/gouzi.php?url=94b07e0b2c0e8244&url="
+    },
+    {
+      "name": "ikun",
+      "type": 0,
+      "url": "https://jx.hls.one/?url="
+    }
+  ],
+  "rules": [
+    {
+      "name": "czzy",
+      "hosts": [
+        "10086.cn"
+      ],
+      "regex": [
+        "/storageWeb/servlet/downloadServlet"
+      ]
+    },
+    {
+      "name": "bdys",
+      "hosts": [
+        "bytetos.com",
+        "byteimg.com",
+        "pstatp.com"
+      ],
+      "regex": [
+        "/tos-cn"
+      ],
+      "exclude": [
+        ".m3u8"
+      ]
+    }
+  ]
+}
