@@ -14,7 +14,7 @@
 		},
 		{
 			"key": "糯米",
-			"name": "糯米",
+			"name": "🌶️糯米🌶️",
 			"type": 3,
 			"api": "csp_NmyswvGuard",
 			"searchable": 1,
@@ -22,7 +22,7 @@
 			"timeout": 15
 		},
 		{
-			"key": "文采",
+			"key": "🍖文采🍖",
 			"name": "文采",
 			"type": 3,
 			"api": "csp_JpysGuard",
