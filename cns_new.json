@@ -22,8 +22,8 @@
 			"timeout": 15
 		},
 		{
-			"key": "🍖文采🍖",
-			"name": "文采",
+			"key": "文采",
+			"name": "🍁文采🍁",
 			"type": 3,
 			"api": "csp_JpysGuard",
 			"searchable": 1,
