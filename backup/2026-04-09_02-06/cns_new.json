@@ -1,0 +1,130 @@
+{
+	"菜妮丝": "https://菜妮丝.top",
+	"spider": "https://tv.菜妮丝.top/jar/fty0227.jar;md5;32091ed00f3c6bab72ba657bdc1599c8",
+	"logo": "https://q2.qlogo.cn/headimg_dl?dst_uin=524187805&spec=100",
+	"wallpaper": "https://api.hanximeng.com/ranimg/?size=m",
+	"sites": [
+		{
+			"key": "豆瓣",
+			"name": "豆瓣",
+			"type": 3,
+			"api": "csp_DouDouGuard",
+			"searchable": 0,
+			"changeable": 0
+		},
+		{
+			"key": "糯米",
+			"name": "🌶️糯米🌶️",
+			"type": 3,
+			"api": "csp_NmyswvGuard",
+			"searchable": 1,
+			"changeable": 1,
+			"timeout": 15
+		},
+		{
+			"key": "文采",
+			"name": "🍁文采🍁",
+			"type": 3,
+			"api": "csp_JpysGuard",
+			"searchable": 1,
+			"changeable": 1,
+			"timeout": 10
+		},
+		{
+			"key": "立播",
+			"name": "立播",
+			"type": 3,
+			"api": "csp_LibvioGuard",
+			"searchable": 1,
+			"changeable": 1,
+			"timeout": 10,
+			"ext": {
+				"Cloud-drive": "tvfan/Cloud-drive.txt"
+			}
+		},
+		{
+			"key": "奶酪",
+			"name": "奶酪",
+			"type": 3,
+			"api": "csp_T4Guard",
+			"searchable": 1,
+			"changeable": 1,
+			"ext": "rfOIzPkSUkANv6AT2prC8en3+TzKx9TnlT8vaY37HhtYfAQe6C5xqrVuJPhQwYV6r3eRdMBGm3Qm6Th+BushR86B6KqJGXDsHazHw7alBG/7zUxkN1tK/NypRxnpBNoeUtpw4jcCGhytI75yO4g4zG6SOPA0RSwhksM0IF2friAkrHCWoW3v+0mdw6sjz4t4XB1Df7yL/R5cfaA/5LQYq3I8OkvMrJMU9Q1P7JXwx7NSF2zTyH/ANVmZ4u5m567DW1KVG7OuQjXPjZiOXTYk0+wjpfBRTf19yIq6q/C76k2Fs80joAMPw0ueDR+QHxtuDcTom2rmHkI1Fonkzi6BotbpUcbSi4PiIgmfdbvVwhG6Z+i4nvt+IYa48l5aLA7PLgDiERpuOs31aHaXlgFswT87XyTb8QaF4CuzKWJuXptwNTjvXAS9KHdxH49Ay+hfBAB2bCvUf4CMoldF2wZUv0mI2qY966erFpOFg+FOc7t88EUH8j8ACXQtHJiKC9RQ+SaLIF0="
+		},
+		{
+			"key": "厂长",
+			"name": "厂长",
+			"type": 3,
+			"api": "csp_NewCzGuard",
+			"searchable": 1,
+			"changeable": 1,
+			"timeout": 10
+		},
+		{
+			"key": "原创",
+			"name": "原创",
+			"type": 3,
+			"api": "csp_YCyzGuard",
+			"searchable": 1,
+			"changeable": 1,
+			"timeout": 15
+		},
+		{
+			"key": "热播",
+			"name": "热播",
+			"type": 3,
+			"api": "csp_AppTTGuard",
+			"searchable": 1,
+			"changeable": 1,
+			"timeout": 10,
+			"ext": "uqGL1bNENExT7/hGxpSE5qU="
+		},
+		{
+			"key": "剧圈",
+			"name": "剧圈",
+			"type": 3,
+			"api": "csp_AppSxGuard",
+			"searchable": 1,
+			"changeable": 1,
+			"timeout": 10,
+			"ext": "rfOb1uAWbkRHp7hdxprG9un3+S3T18333j8hL4ryEFdPZxse8yYwoKFyJOlU2M9/q2OcL8NQxT0k5GV9Quw0AIzUurGBVyPqCLrdirfpAz+n0Qh7PVBWo8uxWhO1Bs1MCYA1oiM="
+		},
+		{
+			"key": "视界",
+			"name": "视界",
+			"type": 3,
+			"api": "csp_AppNoxGuard",
+			"searchable": 1,
+			"changeable": 1,
+			"timeout": 10,
+			"ext": "rfOK0+FRORAJ7epFjN2FsOb0+G+dnI21lWFvI8G1X0oOORAJ9GV87aJ0e7pO1NFrtWjZfNRTjiJz92xnFP1qSozOqvjICH+mT6DW1uW0R2X+2VBkbwRN8JHlF0G6Fd5MCZdG0mBWVATZOKbUiB7mOcxNiEUrUDSBQmHp7MgwFZU4ymgyH+IwTPJPAh4+opPawrLh/T1YM6tDZLjgXhrGY9bs9/7QsIu1PqvuECJRdAZEDnRzG/wRyMxOU3sE8rYTzu0M"
+		},
+		{
+			"key": "播客",
+			"name": "播客",
+			"type": 3,
+			"api": "csp_AppSxGuard",
+			"searchable": 1,
+			"changeable": 1,
+			"timeout": 10,
+			"ext": "rfOb1uAWbkRHp7hdxprG9un3+SDcz8rnlT83d5z3FhMaeEUUqDo3pqx1fbpMycIs9SKEeN0FligzxT55OaAlO5qM0+WFfzCsCLA="
+		},
+		{
+			"key": "推送",
+			"name": "推送",
+			"type": 3,
+			"api": "csp_Push",
+			"searchable": 0,
+			"changeable": 0,
+			"jar": "https://tv.菜妮丝.top/jar/fm0227.jar;md5;b0adab2fad1de8871b9533527f407cdf"
+		}
+	],
+	"parses": [
+		{ "name": "解析聚合", "type": 3, "url": "Web" },
+		{ "name": "HLS", "type": 0, "url": "https://jx.hls.one/?url=" },
+		{ "name": "虾米", "type": 0, "url": "https://jx.xmflv.com/?url=" }
+	],
+	"rules": [
+		{ "name": "proxy", "hosts": ["raw.githubusercontent.com", "googlevideo.com"] }
+	]
+}
