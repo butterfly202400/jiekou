@@ -16,13 +16,14 @@
     { "key": "独播弹幕版", "name": "独播", "type": 3, "api": "csp_AweSomeGuard", "searchable": 1, "quickSearch": 1, "changeable": 0, "filterable": 1, "ext": { "sp": "Duboku", "danmu": true }, "timeout": 10 },
     { "key": "小苹果弹幕版", "name": "苹果", "type": 3, "api": "csp_AweSomeGuard", "searchable": 1, "quickSearch": 1, "changeable": 1, "filterable": 1, "ext": { "sp": "Xpg", "danmu": true }, "timeout": 10 },
 
-    { "key": "MyAli", "name": "阿里", "type": 3, "api": "csp_AweSomeGuard", "ext": { "sp": "MyAli" } },
-    { "key": "MyQuark", "name": "夸克", "type": 3, "api": "csp_AweSomeGuard", "ext": { "sp": "MyQuark" } },
-    { "key": "MyBaidu", "name": "百度", "type": 3, "api": "csp_AweSomeGuard", "ext": { "sp": "MyBaidu" } },
-    { "key": "MyXunLei", "name": "迅雷", "type": 3, "api": "csp_AweSomeGuard", "ext": { "sp": "MyXunLei" } },
-    { "key": "My189", "name": "天翼云", "type": 3, "api": "csp_AweSomeGuard", "ext": { "sp": "My189" } }
+    { "key": "MyAli", "name": "阿里", "type": 3, "api": "csp_AweSomeGuard", "playerType": 2, "ext": { "sp": "MyAli" } },
+    { "key": "MyQuark", "name": "夸克", "type": 3, "api": "csp_AweSomeGuard", "playerType": 2, "ext": { "sp": "MyQuark" } },
+    { "key": "MyBaidu", "name": "百度", "type": 3, "api": "csp_AweSomeGuard", "playerType": 2, "ext": { "sp": "MyBaidu" } },
+    { "key": "MyXunLei", "name": "迅雷", "type": 3, "api": "csp_AweSomeGuard", "playerType": 2, "ext": { "sp": "MyXunLei" } },
+    { "key": "My189", "name": "天翼云", "type": 3, "api": "csp_AweSomeGuard", "playerType": 2, "ext": { "sp": "My189" } }
   ],
   "parses": [
+    { "name": "聚合0", "type": 3, "url": "Web" },
     { "name": "聚合1", "type": 3, "url": "Demo" },
     { "name": "推荐", "type": 1, "url": "https://zy.qiaoji8.com/gouzi.php?url=94b07e0b2c0e8244&url=" },
     { "name": "ikun", "type": 0, "url": "https://jx.hls.one/?url=" }
