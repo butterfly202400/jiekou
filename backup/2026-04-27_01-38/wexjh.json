@@ -1,0 +1,33 @@
+{
+  "spider": "http://oss4liview.moji.com/thd_file/2026/01/26/0e8629c873fea38d04bc58cbeb28c3c5.jpg;md5;127ea82cb8bf8a82f0cf64da66e39b60",
+  "wallpaper": "http://127.0.0.1:9978/proxy?do=wall",
+  "logo": "https://storage.7x24cc.com/storage-server/presigned/ss1/a6-online-fileupload/newMediaImage/ACB34B_773_photo_2022-09-14_00-00-57_20251204145106336newMediaImage.jpg",
+  "sites": [
+    { "key": "豆瓣", "name": "豆瓣", "type": 3, "api": "csp_AweSomeGuard", "searchable": 0, "changeable": 1, "ext": { "sp": "Douban" } },
+    { "key": "推荐", "name": "推荐", "type": 3, "api": "csp_NewDouBanGuard", "searchable": 1, "changeable": 1, "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/json/douban.json" },
+    { "key": "配置中心", "name": "配置", "type": 3, "api": "csp_AweSomeGuard", "searchable": 0, "changeable": 0, "ext": { "sp": "Config" } },
+    { "key": "本地播放", "name": "本地", "type": 3, "api": "csp_AweSomeGuard", "searchable": 0, "changeable": 0, "ext": { "sp": "Local" } },
+    { "key": "糯米", "name": "🍓糯米🍓", "type": 3, "api": "csp_AweSomeGuard", "searchable": 1, "quickSearch": 1, "ext": { "sp": "Nmys", "danmu": true } },
+    { "key": "荐片弹幕版", "name": "🔥荐片🔥", "type": 3, "api": "csp_AweSomeGuard", "searchable": 1, "quickSearch": 1, "ext": { "sp": "Jianpian", "danmu": true } },
+    { "key": "文才", "name": "🍉文采🍉", "type": 3, "api": "csp_AweSomeGuard", "searchable": 1, "quickSearch": 1, "ext": { "sp": "Jpys", "danmu": true } },
+    { "key": "瓜子", "name": "瓜子", "type": 3, "api": "csp_AweSomeGuard", "searchable": 1, "quickSearch": 1, "ext": { "sp": "Guazi", "danmu": true } },
+    { "key": "热播弹幕版", "name": "热播", "type": 3, "api": "csp_AweSomeGuard", "searchable": 1, "quickSearch": 1, "ext": { "sp": "TianTian", "danmu": true, "site": 0 } },
+    { "key": "小苹果弹幕版", "name": "苹果", "type": 3, "api": "csp_AweSomeGuard", "searchable": 1, "quickSearch": 1, "ext": { "sp": "Xpg", "danmu": true } },
+    { "key": "云云弹幕版", "name": "云云", "type": 3, "api": "csp_AweSomeGuard", "searchable": 1, "quickSearch": 1, "ext": { "sp": "YunYun", "danmu": true } },
+    { "key": "雄鹰弹幕版", "name": "雄鹰", "type": 3, "api": "csp_AweSomeGuard", "searchable": 1, "quickSearch": 1, "ext": { "sp": "XiongYing", "danmu": true } },
+    { "key": "小猪弹幕版", "name": "小猪", "type": 3, "api": "csp_AweSomeGuard", "searchable": 1, "quickSearch": 1, "ext": { "sp": "XiaoZhu", "danmu": true } },
+    { "key": "一起弹幕版", "name": "一起", "type": 3, "api": "csp_AweSomeGuard", "searchable": 1, "quickSearch": 1, "ext": { "sp": "Yqs", "danmu": true } },
+    { "key": "奇奇弹幕版", "name": "奇奇", "type": 3, "api": "csp_AweSomeGuard", "searchable": 1, "quickSearch": 1, "ext": { "sp": "QiQi", "danmu": true } },
+    { "key": "紫金弹幕版", "name": "紫金", "type": 3, "api": "csp_AweSomeGuard", "searchable": 1, "quickSearch": 1, "ext": { "sp": "AppFox", "danmu": true, "siteUrl": "https://www.zjcvod.com" } },
+    { "key": "独播弹幕版", "name": "独播", "type": 3, "api": "csp_AweSomeGuard", "searchable": 1, "quickSearch": 1, "ext": { "sp": "Duboku", "danmu": true } },
+    { "key": "厂长弹幕版", "name": "厂长", "type": 3, "api": "csp_AweSomeGuard", "searchable": 1, "quickSearch": 1, "ext": { "sp": "Czzy", "danmu": true } },
+    { "key": "csp_Btt", "name": "比特", "type": 3, "api": "csp_AweSomeGuard", "searchable": 1, "quickSearch": 1, "ext": { "sp": "Btt", "danmu": true } },
+    { "key": "韩圈", "name": "韩圈", "type": 3, "api": "csp_AweSomeGuard", "searchable": 1, "quickSearch": 1, "ext": { "sp": "HanXiaoQuan", "danmu": true } },
+    { "key": "️爱看Bot弹幕版", "name": "爱看", "type": 3, "api": "csp_AweSomeGuard", "searchable": 1, "quickSearch": 1, "ext": { "sp": "Ikanbot", "danmu": true } },
+    { "key": "电影天堂", "name": "天堂", "type": 1, "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/from/dyttm3u8/at/m3u8/", "searchable": 1, "quickSearch": 1 }
+  ],
+  "parses": [
+    { "name": "推荐", "type": 1, "url": "https://zy.qiaoji8.com/gouzi.php?url=94b07e0b2c0e8244&url=" },
+    { "name": "ikun", "type": 0, "url": "https://jx.hls.one/?url=" }
+  ]
+}
