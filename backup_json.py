@@ -30,7 +30,7 @@ if json_files:
         shutil.copy2(os.path.join(ROOT_DIR, f), os.path.join(backup_dir, f))
         copy_count += 1
 
-# ===== 3. 自动修剪 (保留最近 60 次) =====
+# ===== 3. 自动修剪 (保留最近 20 次) =====
 # 获取所有文件夹并按名称排序
 all_backups = sorted([
     d for d in os.listdir(BACKUP_ROOT) 
@@ -38,8 +38,8 @@ all_backups = sorted([
 ])
 
 deleted_count = 0
-if len(all_backups) > 60:
-    to_delete = all_backups[:-60]
+if len(all_backups) > 20:                 # 改为 20
+    to_delete = all_backups[:-20]         # 改为 20
     for folder in to_delete:
         shutil.rmtree(os.path.join(BACKUP_ROOT, folder))
         deleted_count += 1
