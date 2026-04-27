@@ -4,22 +4,22 @@ on:
   schedule:
     # 北京时间每周一凌晨 01:00 = UTC 每周日 17:00
     - cron: '0 17 * * 0'
-  workflow_dispatch: # 支持手动点击按钮立即执行
+  workflow_dispatch: # 手动触发
 
 jobs:
   run-backup:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # 必须赋予写入权限，否则无法推送备份到仓库
+      contents: write
 
     steps:
       - name: 1. 拉取仓库代码
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5   # 升级至 v5，支持 Node.js 24
         with:
-          fetch-depth: 0 # 获取完整历史，确保推送顺利
+          fetch-depth: 0
 
       - name: 2. 安装 Python 环境
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6   # 升级至 v6，支持 Node.js 24
         with:
           python-version: '3.10'
 
@@ -31,7 +31,6 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add backup/
-          # 检查是否有文件变化，防止空提交报错
           if git diff --staged --quiet; then
             echo "没有检测到任何内容变化，跳过提交。"
           else
