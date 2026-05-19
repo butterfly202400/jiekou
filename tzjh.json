@@ -1,39 +1,186 @@
 {
-  "spider": "https://tv.xn--yhqu5zs87a.top/jar/fty0501.jar;md5;ee702f5f6eca6841835f5c14d05445d4",
+  "spider": "https://nos.netease.com/ysf/858bdee43c91d50ebc32c0064f25fd34.txt;md5;bd30c2690ef97e79ddfe843c1efa6105",
   "logo": "https://q2.qlogo.cn/headimg_dl?dst_uin=524187805&spec=100",
   "wallpaper": "https://api.hanximeng.com/ranimg/?size=m",
   "sites": [
-    { "key": "推荐", "name": "推荐", "type": 3, "api": "csp_DouDouGuard", "searchable": 1, "changeable": 1, "ext": { "sp": "Douban" } },
-    { "key": "配置中心", "name": "配置", "type": 3, "api": "csp_MyDriveGuard", "searchable": 0, "changeable": 0, "indexs": 0, "style": { "type": "rect", "ratio": 1.43 }, "ext": { "sp": "Config" } },
-    
-    // --- 移动到此位置的网盘线路 ---
-    { "key": "MyQuark", "name": "😎夸克😎", "type": 3, "api": "csp_MyDriveGuard", "searchable": 0, "quickSearch": 0, "changeable": 0, "indexs": 0, "ext": { "sp": "MyQuark" } },
-    { "key": "MyAli", "name": "阿里", "type": 3, "api": "csp_MyDriveGuard", "searchable": 0, "quickSearch": 0, "changeable": 0, "indexs": 0, "ext": { "sp": "MyAli" } },
-    
-    { "key": "糯米", "name": "🍒糯米🍒", "type": 3, "api": "csp_NmyswvGuard", "searchable": 1, "quickSearch": 1, "changeable": 1, "filterable": 1, "ext": { "sp": "Nmys", "danmu": true }, "timeout": 10 },
-    { "key": "荐片弹幕版", "name": "🍁荐片🍁", "type": 3, "api": "csp_JPJGuard", "searchable": 1, "quickSearch": 1, "changeable": 1, "filterable": 1, "ext": { "sp": "Jianpian", "danmu": true }, "timeout": 10 },
-    { "key": "文才", "name": "🔥文采🔥", "type": 3, "api": "csp_JpysGuard", "searchable": 1, "quickSearch": 1, "changeable": 1, "filterable": 1, "ext": { "sp": "Jpys", "danmu": true }, "timeout": 10 },
-    { "key": "光影弹幕版", "name": "光影", "type": 3, "api": "csp_DouDouGuard", "searchable": 1, "filterable": 1, "changeable": 0, "ext": { "sp": "Guanying", "danmu": true }, "timeout": 30 },
-    { "key": "厂长弹幕版", "name": "厂长", "type": 3, "api": "csp_NewCzGuard", "searchable": 1, "quickSearch": 1, "changeable": 0, "filterable": 1, "ext": { "sp": "Czzy", "danmu": true }, "timeout": 10 },
-    { "key": "电影天堂", "name": "天堂", "type": 1, "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/from/dyttm3u8/at/m3u8/", "searchable": 1, "quickSearch": 1, "changeable": 1, "filterable": 1, "timeout": 10 },
-    { "key": "热播弹幕版", "name": "热播", "type": 3, "api": "csp_AppTTGuard", "searchable": 1, "quickSearch": 1, "changeable": 1, "filterable": 1, "ext": { "sp": "TianTian", "danmu": true, "site": 0 }, "timeout": 10 },
-    { "key": "爱看Bot弹幕版", "name": "爱看", "type": 3, "api": "csp_DouDouGuard", "searchable": 1, "quickSearch": 1, "changeable": 1, "filterable": 1, "ext": { "sp": "Ikanbot", "danmu": true }, "timeout": 10 },
-    { "key": "独播弹幕版", "name": "独播", "type": 3, "api": "csp_DouDouGuard", "searchable": 1, "quickSearch": 1, "changeable": 0, "filterable": 1, "ext": { "sp": "Duboku", "danmu": true }, "timeout": 10 },
-    { "key": "小苹果弹幕版", "name": "苹果", "type": 3, "api": "csp_DouDouGuard", "searchable": 1, "quickSearch": 1, "changeable": 1, "filterable": 1, "ext": { "sp": "Xpg", "danmu": true }, "timeout": 10 },
-
-    // --- 百度、迅雷、天翼云保持在末尾 ---
-    { "key": "MyBaidu", "name": "百度", "type": 3, "api": "csp_MyDriveGuard", "searchable": 0, "quickSearch": 0, "changeable": 0, "indexs": 0, "ext": { "sp": "MyBaidu" } },
-    { "key": "MyXunLei", "name": "迅雷", "type": 3, "api": "csp_MyDriveGuard", "searchable": 0, "quickSearch": 0, "changeable": 0, "indexs": 0, "ext": { "sp": "MyXunLei" } },
-    { "key": "My189", "name": "天翼云", "type": 3, "api": "csp_MyDriveGuard", "searchable": 0, "quickSearch": 0, "changeable": 0, "indexs": 0, "ext": { "sp": "My189" } }
+    {
+      "key": "NewDouBan",
+      "name": "推荐",
+      "type": 3,
+      "api": "csp_NewDouBanGuard",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0,
+      "ext": "https://cdn.waimaimingtang.com/file/images/bwc/20260414181247-ae51abfbfe.txt"
+    },
+    {
+      "key": "Wexconfig",
+      "name": "配置",
+      "type": 3,
+      "api": "csp_WexConfigGuard",
+      "searchable": 0,
+      "changeable": 0,
+      "indexs": 0
+    },
+    {
+      "key": "MyQuark",
+      "name": "😎夸克😎",
+      "type": 3,
+      "api": "csp_MyQuarkGuard",
+      "searchable": 1,
+      "changeable": 1,
+      "timeout": 50,
+      "style": {
+        "type": "list"
+      }
+    },
+    {
+      "key": "MyBaiDu",
+      "name": "百度",
+      "type": 3,
+      "api": "csp_MyBaiDuGuard",
+      "searchable": 1,
+      "changeable": 1,
+      "timeout": 50,
+      "style": {
+        "type": "list"
+      }
+    },
+    {
+      "key": "MyPan189",
+      "name": "天翼",
+      "type": 3,
+      "api": "csp_MyPan189Guard",
+      "searchable": 1,
+      "changeable": 1,
+      "timeout": 50,
+      "style": {
+        "type": "list"
+      }
+    },
+    {
+      "key": "WexJianPian",
+      "name": "🍁荐片🍁",
+      "type": 3,
+      "api": "csp_WexJianPianGuard",
+      "searchable": 1,
+      "changeable": 1
+    },
+    {
+      "key": "WexWenCai",
+      "name": "🔥文才🔥",
+      "type": 3,
+      "api": "csp_WexWenCaiGuard",
+      "searchable": 1,
+      "changeable": 1
+    },
+    {
+      "key": "NewGuanYing",
+      "name": "观影",
+      "type": 3,
+      "api": "csp_NewGuanYingGuard",
+      "searchable": 1,
+      "changeable": 1,
+      "timeout": 120
+    },
+    {
+      "key": "WexReBo",
+      "name": "热播",
+      "type": 3,
+      "api": "csp_WexReBoGuard",
+      "searchable": 1,
+      "changeable": 1
+    },
+    {
+      "key": "WexIkanBot",
+      "name": "爱看",
+      "type": 3,
+      "api": "csp_WexIkanBotGuard",
+      "searchable": 1,
+      "changeable": 1
+    },
+    {
+      "key": "WexDuBoKu",
+      "name": "独播",
+      "type": 3,
+      "api": "csp_WexDuBoKuGuard",
+      "searchable": 1,
+      "changeable": 1
+    },
+    {
+      "key": "电影天堂",
+      "name": "天堂",
+      "type": 1,
+      "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/from/dyttm3u8/at/m3u8/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "timeout": 10
+    }
   ],
   "parses": [
-    { "name": "聚合0", "type": 3, "url": "Web" },
-    { "name": "聚合1", "type": 3, "url": "Demo" },
-    { "name": "推荐", "type": 1, "url": "https://zy.qiaoji8.com/gouzi.php?url=94b07e0b2c0e8244&url=" },
-    { "name": "ikun", "type": 0, "url": "https://jx.hls.one/?url=" }
+    {
+      "name": "聚合0",
+      "type": 3,
+      "url": "Web"
+    },
+    {
+      "name": "聚合1",
+      "type": 3,
+      "url": "Demo"
+    }
+  ],
+  "doh": [
+    {
+      "name": "Google",
+      "url": "https://dns.google/dns-query",
+      "ips": [
+        "8.8.4.4",
+        "8.8.8.8"
+      ]
+    },
+    {
+      "name": "Cloudflare",
+      "url": "https://cloudflare-dns.com/dns-query",
+      "ips": [
+        "1.1.1.1",
+        "1.0.0.1"
+      ]
+    }
   ],
   "rules": [
-    { "name": "czzy", "hosts": [ "10086.cn" ], "regex": [ "/storageWeb/servlet/downloadServlet" ] },
-    { "name": "bdys", "hosts": [ "bytetos.com", "byteimg.com", "pstatp.com" ], "regex": [ "/tos-cn" ], "exclude": [ ".m3u8" ] }
+    {
+      "name": "proxy",
+      "hosts": [
+        "hlsztemgsplive.miguvideo.com=hlsztemgsplive.188766.xyz",
+        "cache.ott.fifalive.itv.cmvideo.cn=fifalive.188766.xyz",
+        "iptv.huuc.edu.cn=huucv6.188766.xyz",
+        "raw.githubusercontent.com",
+        "googlevideo.com",
+        "haiwaikan.com",
+        ".*boku.*",
+        ".*nivod.*"
+      ]
+    },
+    {
+      "name": "海外看",
+      "hosts": [
+        "haiwaikan"
+      ],
+      "regex": [
+        "10.0099",
+        "10.3333",
+        "16.0599"
+      ]
+    }
+  ],
+  "headers": [
+    {
+      "host": "hlsztemgsplive.miguvideo.com",
+      "header": {
+        "User-Agent": "bingcha/1.1 (mianfeifenxiang) "
+      }
+    }
   ]
 }
