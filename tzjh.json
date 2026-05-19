@@ -24,7 +24,7 @@
     },
     {
       "key": "MyQuark",
-      "name": "😎夸克😎",
+      "name": "😎夸克网盘😎",
       "type": 3,
       "api": "csp_MyQuarkGuard",
       "searchable": 1,
@@ -57,6 +57,14 @@
       "style": {
         "type": "list"
       }
+    },
+    {
+      "key": "WexYiYs",
+      "name": "🍒糯米🍒",
+      "type": 3,
+      "api": "csp_WexYiYsGuard",
+      "searchable": 1,
+      "changeable": 1
     },
     {
       "key": "WexJianPian",
