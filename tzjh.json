@@ -1,5 +1,5 @@
 {
-  "spider": "https://tv.菜妮丝.top/jar/fty0501.jar;md5;ee702f5f6eca6841835f5c14d05445d4",
+  "spider": "https://tv.菜妮丝.top/jar/fty0528.jar;md5;4905535609a9c0ce9cc2f652d6d90bda",
   "wallpaper": "https://api.hanximeng.com/ranimg/?size=m",
   "logo": "https://q2.qlogo.cn/headimg_dl?dst_uin=524187805&spec=100",
   "sites": [
@@ -17,7 +17,7 @@
     { "key": "厂长弹幕版", "name": "厂长", "type": 3, "api": "csp_NewCzGuard", "searchable": 1, "quickSearch": 1, "changeable": 0, "filterable": 1, "timeout": 10 },
     { "key": "电影天堂", "name": "天堂", "type": 1, "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/from/dyttm3u8/at/m3u8/", "searchable": 1, "quickSearch": 1, "changeable": 1, "filterable": 1, "timeout": 10 },
     { "key": "热播弹幕版", "name": "热播", "type": 3, "api": "csp_AppTTGuard", "searchable": 1, "quickSearch": 1, "changeable": 1, "filterable": 1, "ext": "uqGL1bNENExT7/hGxpSE5qU=", "timeout": 10 },
-    { "key": "爱看Bot弹幕版", "name": "爱看", "type": 3, "api": "csp_SaoHuo", "searchable": 1, "quickSearch": 1, "changeable": 1, "filterable": 1, "ext": "https://shdy5.us", "jar": "https://tv.菜妮丝.top/jar/feimao0501.jar;md5;9c8e45f60d3d413d8b140ec21811deb0", "timeout": 10 },
+    { "key": "爱看Bot弹幕版", "name": "爱看", "type": 3, "api": "csp_SaoHuo", "searchable": 1, "quickSearch": 1, "changeable": 1, "filterable": 1, "ext": "https://shdy5.us", "jar": "https://tv.菜妮丝.top/jar/feimao0528.jar;md5;b81a5747f91e7169bdc7e3f68bd995e0", "timeout": 10 },
     { "key": "独播弹幕版", "name": "独播", "type": 3, "api": "csp_BttwooGuard", "searchable": 1, "quickSearch": 1, "changeable": 0, "filterable": 1, "timeout": 10 },
     { "key": "小苹果弹幕版", "name": "苹果", "type": 3, "api": "csp_AppSxGuard", "searchable": 1, "quickSearch": 1, "changeable": 1, "filterable": 1, "ext": "rfOb1uAWbkRHp7hdxprG9un3+TDC2t/rlTwlcMr+ChdbeV8Q9y9xsKxqfbtO0M05tGWcacFVm2c45jhyH6t1Rt6A6PjICGqxV+uN1uOqS2/x0Vp5J0Vfo8usQADpHg==", "timeout": 10 },
 
