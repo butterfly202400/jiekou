@@ -11,6 +11,10 @@ proxies:
     public-key: KpSo5m7AfnERJz2zbqi_Gqek65yGKzqvMYWiy9cMxCI
     short-id: 4f3d16240bb853f8
     fp: chrome
+    flow: xtls-rprx-vision
+    client-alpn:
+      - h2
+      - http/1.1
   - name: "JP-Osaka-VLESS"
     type: vless
     server: 206.190.235.122
@@ -23,23 +27,6 @@ proxies:
       path: "/Dl2gNKWEQlvFOFbQ"
       headers:
         Host: proxy.ucdshunji.uk
-  - name: "🇯🇵日本 05 | 高级专线"
-    type: vless
-    server: jp5.2e132504-56b9-9dc6-2349-a0c57fad00b0.fabe993b.the-best-airport.com
-    port: 443
-    uuid: 8599a6c2-e41d-41df-a4b9-6444fda02b70
-    network: xhttp
-    tls: true
-    servername: baidu.com
-    client-fingerprint: chrome
-    skip-cert-verify: true
-    alpn:
-      - h3
-      - http/1.1
-    packet-encoding: xudp
-    xhttp-opts:
-      path: /path
-      mode: stream-up
 
 proxy-groups:
   - name: "🚀 节点选择"
@@ -47,7 +34,6 @@ proxy-groups:
     proxies:
       - "Singapore-Vultr-VLess"
       - "JP-Osaka-VLESS"
-      - "🇯🇵日本 05 | 高级专线"
       - DIRECT
 
 rules:
