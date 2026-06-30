@@ -1,4 +1,4 @@
-# 完整的 Clash Meta 整合配置文件
+# 完整的 Clash Meta 整合配置文件（修复版）
 proxies:
   - name: "Singapore-Vultr-VLess"
     type: vless
@@ -9,14 +9,11 @@ proxies:
     tls: true
     reality: true
     flow: xtls-rprx-vision
-    packet-addr: true
     sni: www.apple.com
     public-key: KpSo5m7AfnERJz2zbqi_Gqek65yGKzqvMYWiy9cMxCI
     short-id: 4f3d16240bb853f8
     fp: chrome
-    alpn:
-      - h2
-      - http/1.1
+    alpn: [h2, http/1.1]
 
   - name: "JP-Osaka-VLESS"
     type: vless
