@@ -1,5 +1,5 @@
 proxies:
-  - name: "日本线路-Osaka-VLESS"
+  - name: "JP-Osaka-VLESS"
     type: vless
     server: 206.190.235.122
     port: 8443
