@@ -6,18 +6,18 @@ proxies:
     uuid: 96db0098-1138-4815-b7de-02bf8b77d39d
     network: ws
     tls: true
-    sni: proxy.ucdshunji.uk
+    servername: proxy.ucdshunji.uk
     ws-opts:
       path: "/Dl2gNKWEQlvFOFbQ"
       headers:
         Host: proxy.ucdshunji.uk
 
 proxy-groups:
-  - name: "🚀 节点选择"
+  - name: "Proxy"
     type: select
     proxies:
       - "JP-Osaka-VLESS"
       - DIRECT
 
 rules:
-  - MATCH,🚀 节点选择
+  - MATCH,Proxy
