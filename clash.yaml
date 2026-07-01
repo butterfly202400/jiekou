@@ -1,21 +1,6 @@
-# 完整的 Clash Meta 整合配置文件（修复版）
+# 完整的 Clash Meta 配置文件（仅保留日本节点）
 proxies:
-  - name: "Singapore-Vultr-VLess"
-    type: vless
-    server: 149.28.136.177
-    port: 443
-    uuid: c7d5062b-604e-42b0-85d0-0ba354cee311
-    network: tcp
-    tls: true
-    reality: true
-    flow: xtls-rprx-vision
-    sni: www.apple.com
-    public-key: KpSo5m7AfnERJz2zbqi_Gqek65yGKzqvMYWiy9cMxCI
-    short-id: 4f3d16240bb853f8
-    fp: chrome
-    alpn: [h2, http/1.1]
-
-  - name: "JP-Osaka-VLESS"
+  - name: "日本线路-Osaka-VLESS"
     type: vless
     server: 206.190.235.122
     port: 8443
@@ -32,7 +17,6 @@ proxy-groups:
   - name: "🚀 节点选择"
     type: select
     proxies:
-      - "Singapore-Vultr-VLess"
       - "JP-Osaka-VLESS"
       - DIRECT
 
