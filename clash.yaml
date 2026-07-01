@@ -1,4 +1,3 @@
-# 完整的 Clash Meta 配置文件（仅保留日本节点）
 proxies:
   - name: "日本线路-Osaka-VLESS"
     type: vless
